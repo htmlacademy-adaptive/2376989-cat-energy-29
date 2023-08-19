@@ -1,5 +1,9 @@
 .nutrition-programs__list {
   background-color: #f2f2f2;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .nutrition-program__title {

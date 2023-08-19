@@ -2,4 +2,12 @@
   background: #ffffff;
   margin: 0 auto;
   width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
 }

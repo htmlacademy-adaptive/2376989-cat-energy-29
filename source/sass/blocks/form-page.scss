@@ -30,4 +30,50 @@
   font-size: 14px;
   line-height: 16px;
   color: #000000;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+  }
+}
+
+.form-page__data-wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.cat-data {
+  display: flex;
+  flex-direction: column;
+}
+
+.radio-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-information {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.checkboxes {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+  }
 }

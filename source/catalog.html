@@ -10,13 +10,15 @@
     <!--Header-->
     <header class="main-header">
       <!--Логотип-->
-        <div class="header-logo logo">
-          <img class="logo__image logo__image--mobile" src="#" alt="Логотип сайта.">
-          <img class="logo__title logo-title" src="#" alt="Название сайта.">
+        <div class="main-header__wrapper">
+          <div class="header-logo logo">
+            <img class="logo__image logo__image--mobile" src="#" width="33" height="38" alt="Логотип сайта.">
+            <img class="logo__title logo-title" src="#" width="101" height="18" alt="Название сайта.">
+          </div>
+          <button class="main-header__button main-header__button--toggle">
+            <span class="visually-hidden">Открыть меню.</span>
+          </button>
         </div>
-        <button class="main-header__button main-header__button--toggle">
-          <span class="visually-hidden">Открыть меню.</span>
-        </button>
       <!--Навигация-->
       <nav class="main-nav">
         <ul class="main-nav__list">
@@ -129,75 +131,82 @@
               </dl>
             <button class="product-item__button button" type="button">заказать</button>
             </li>
+            <li class="products__item view-to-all">
+              <b class="view-to-all__description">Показать еще 100500 товаров</b>
+              <p class="view-to-all__prompt">На самом деле вкусов гораздо больше!</p>
+              <button class="view-to-all__button button button--disabled">показать все</button>
+            </li>
           </ul>
-          <div class="view-to-all">
-            <b class="view-to-all__description">Показать еще 100500 товаров</b>
-            <p class="view-to-all__prompt">На самом деле вкусов гораздо больше!</p>
-            <button class="view-to-all__button button button--disabled">показать все</button>
-          </div>
+
         </section>
         <!--Дополнительные товары-->
         <section class="additions">
           <h2 class="additions__title">Дополнительные товары</h2>
-          <ul class="additions__list">
-            <li class="additions__item addition-item">
-              <b class="addition-item__title">сахарозаменитель</b>
-              <span class="addition-item__amount">1 упаковка (100 г)</span>
-              <span class="addition-item__price">200 ₽</span>
-              <button class="addition-item__button button" type="button">заказать</button>
-            </li>
-            <li class="additions__item addition-item">
-              <b class="addition-item__title">питьевая вода</b>
-              <span class="addition-item__amount">5 литров</span>
-              <span class="addition-item__price">50 ₽</span>
-              <button class="addition-item__button button" type="button">заказать</button>
-            </li>
-            <li class="additions__item addition-item">
-              <b class="addition-item__title">молоко</b>
-              <span class="addition-item__amount">1 литр</span>
-              <span class="addition-item__price">100 ₽</span>
-              <button class="addition-item__button button" type="button">заказать</button>
-            </li>
-            <li class="additions__item addition-item">
-              <b class="addition-item__title">витамины</b>
-              <span class="addition-item__amount">1 упаковка (30 г)</span>
-              <span class="addition-item__price">300 ₽</span>
-              <button class="addition-item__button button" type="button">заказать</button>
-            </li>
-          </ul>
-          <!--Подарок-->
-          <div class="additions__present">
-            <h2 class="additions__present-title">Закажите все и получите чехол для кота в подарок!</h2>
+          <div class="additions__wrapper">
+            <ul class="additions__list">
+              <li class="additions__item addition-item">
+                <b class="addition-item__title">сахарозаменитель</b>
+                <span class="addition-item__amount">1 упаковка (100 г)</span>
+                <span class="addition-item__price">200 ₽</span>
+                <button class="addition-item__button button" type="button">заказать</button>
+              </li>
+              <li class="additions__item addition-item">
+                <b class="addition-item__title">питьевая вода</b>
+                <span class="addition-item__amount">5 литров</span>
+                <span class="addition-item__price">50 ₽</span>
+                <button class="addition-item__button button" type="button">заказать</button>
+              </li>
+              <li class="additions__item addition-item">
+                <b class="addition-item__title">молоко</b>
+                <span class="addition-item__amount">1 литр</span>
+                <span class="addition-item__price">100 ₽</span>
+                <button class="addition-item__button button" type="button">заказать</button>
+              </li>
+              <li class="additions__item addition-item">
+                <b class="addition-item__title">витамины</b>
+                <span class="addition-item__amount">1 упаковка (30 г)</span>
+                <span class="addition-item__price">300 ₽</span>
+                <button class="addition-item__button button" type="button">заказать</button>
+              </li>
+            </ul>
+            <!--Подарок-->
+            <div class="additions__present">
+              <h2 class="additions__present-title">Закажите все и получите чехол для кота в подарок!</h2>
+            </div>
           </div>
         </section>
       </main>
       <footer class="main-footer footer">
         <!--Сотрудничество-->
         <section class="footer__cooperation cooperation">
-          <h2 class="visually-hidden">Сотрудничество.</h2>
-          <b class="cooperation__call">приглашаем к сотрудничеству дилеров!</b>
-          <address class="cooperation__address">
-            ул. Большая
-            Конюшенная, д. 19/8
-            Санкт-Петербург
-          </address>
+          <div class="cooperation-wrapper">
+            <h2 class="visually-hidden">Сотрудничество.</h2>
+            <b class="cooperation__call">приглашаем к сотрудничеству дилеров!</b>
+            <address class="cooperation__address">
+              ул. Большая
+              Конюшенная, д. 19/8
+              Санкт-Петербург
+            </address>
+          </div>
           <img class="cooperation__map" src="#" alt="Местоположение на карте.">
         </section>
-        <div class="footer__title">
-          <img class="logo__title logo-title" src="#" alt="Название сайта.">
-        </div>
-        <div class="social">
-          <ul class="social__list">
-            <li class="social__item social__item--vkontakte">
-              <span class="visually-hidden">Вконтакте.</span>
-            </li>
-            <li class="social__item social__item--youtube">
-              <span class="visually-hidden">Yotube.</span>
-            </li>
-            <li class="social__item social__item--telegramm">
-              <span class="visually-hidden">Telegramm.</span>
-            </li>
-          </ul>
+        <div class="main-footer__wrapper">
+          <div class="footer__title">
+            <img class="logo__title logo-title" src="#" alt="Название сайта.">
+          </div>
+          <div class="social">
+            <ul class="social__list">
+              <li class="social__item social__item--vkontakte">
+                <span class="visually-hidden">Вконтакте.</span>
+              </li>
+              <li class="social__item social__item--youtube">
+                <span class="visually-hidden">Yotube.</span>
+              </li>
+              <li class="social__item social__item--telegramm">
+                <span class="visually-hidden">Telegramm.</span>
+              </li>
+            </ul>
+          </div>
           <div class="copyright">
             <p class="copyright__author">HTML Academy</p>
             <a class="copyright__link" href="#">

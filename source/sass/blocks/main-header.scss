@@ -1,0 +1,10 @@
+.main-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-header__button {
+  height: 18px;
+  width: 18px;
+  display: inline-block;
+}

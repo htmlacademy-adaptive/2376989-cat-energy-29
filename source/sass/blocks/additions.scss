@@ -4,6 +4,18 @@
   line-height: 24px;
 }
 
+.additions__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.additions__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .addition-item__title {
   font-family: "Oswald";
   font-size: 16px;
@@ -22,7 +34,7 @@
   background-color: rgba(104, 183, 56, 0.85);
 }
 
-.additions__present__title {
+.additions__present-title {
   font-family: "Lato";
   font-size: 16px;
   line-height: 20px;

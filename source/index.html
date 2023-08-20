@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
@@ -9,14 +10,16 @@
     <!--Header-->
       <header class="main-header">
         <!--Логотип-->
-          <div class="header-logo logo">
-            <img class="logo__image logo__image--mobile" src="#" alt="Логотип сайта.">
-            <img class="logo__title logo-title" src="#" alt="Название сайта.">
+          <div class="main-header__wrapper">
+            <div class="header-logo logo">
+              <img class="logo__image logo__image--mobile" src="#" width="33" height="38" alt="Логотип сайта.">
+              <img class="logo__title logo-title" src="#" width="101" height="18" alt="Название сайта.">
+            </div>
+            <button class="main-header__button main-header__button--toggle">
+              <span class="visually-hidden">Открыть меню.</span>
+            </button>
           </div>
-          <button class="main-header__button main-header__button--toggle">
-            <span class="visually-hidden">Открыть меню.</span>
-          </button>
-        <!--Навигация-->
+          <!--Навигация-->
           <nav class="main-nav">
             <ul class="main-nav__list">
               <li class="main-nav__item">
@@ -92,30 +95,34 @@
       <footer class="main-footer footer">
         <!--Сотрудничество-->
         <section class="footer__cooperation cooperation cooperation--index">
-          <h2 class="visually-hidden">Сотрудничество.</h2>
-          <b class="cooperation__call">приглашаем к сотрудничеству дилеров!</b>
-          <address class="cooperation__address">
-            ул. Большая
-            Конюшенная, д. 19/8
-            Санкт-Петербург
-          </address>
+          <div class="cooperation-wrapper">
+            <h2 class="visually-hidden">Сотрудничество.</h2>
+            <b class="cooperation__call">приглашаем к сотрудничеству дилеров!</b>
+            <address class="cooperation__address">
+              ул. Большая
+              Конюшенная, д. 19/8
+              Санкт-Петербург
+            </address>
+          </div>
           <img class="cooperation__map" src="#" alt="Местоположение на карте.">
         </section>
-        <div class="footer__title">
-          <img class="logo__title logo-title" src="#" alt="Название сайта.">
-        </div>
-        <div class="social">
-          <ul class="social__list">
-            <li class="social__item social__item--vkontakte">
-              <span class="visually-hidden">Вконтакте.</span>
-            </li>
-            <li class="social__item social__item--youtube">
-              <span class="visually-hidden">Yotube.</span>
-            </li>
-            <li class="social__item social__item--telegramm">
-              <span class="visually-hidden">Telegramm.</span>
-            </li>
-          </ul>
+        <div class="main-footer__wrapper">
+          <div class="footer__title">
+            <img class="logo__title logo-title" src="#" alt="Название сайта.">
+          </div>
+          <div class="social">
+            <ul class="social__list">
+              <li class="social__item social__item--vkontakte">
+                <span class="visually-hidden">Вконтакте.</span>
+              </li>
+              <li class="social__item social__item--youtube">
+                <span class="visually-hidden">Yotube.</span>
+              </li>
+              <li class="social__item social__item--telegramm">
+                <span class="visually-hidden">Telegramm.</span>
+              </li>
+            </ul>
+          </div>
           <div class="copyright">
             <p class="copyright__author">HTML Academy</p>
             <a class="copyright__link" href="#">

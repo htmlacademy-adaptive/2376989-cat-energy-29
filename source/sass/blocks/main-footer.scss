@@ -2,6 +2,23 @@
   background-color: #f2f2f2;
 }
 
+.cooperation-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-footer__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .cooperation--index {
   background: #ffffff;
 }

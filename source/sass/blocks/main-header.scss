@@ -4,6 +4,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    width: 768px;
   }
 
   @media (min-width: $desktop-width) {
@@ -13,7 +14,7 @@
 
 .main-header__wrapper {
   display: flex;
-  justify-content: space-between;
+  width: 280px;
   padding: 13px 20px;
 }
 
@@ -24,7 +25,8 @@
   align-self: center;
   border: none;
   background: none;
-
+  margin: 0;
+  padding: 0;
 
   &::before {
     content: "";
@@ -48,8 +50,31 @@
 
 .logo__image {
   margin-right: 56px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 14px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .logo__image {
+    width: 60px;
+    height: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo__image {
+    width: 70px;
+    height: 59px;
+  }
 }
 
 .logo__title {
   align-self: center;
+  margin-right: 45px;
 }

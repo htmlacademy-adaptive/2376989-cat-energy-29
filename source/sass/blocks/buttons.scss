@@ -1,14 +1,15 @@
 .button {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
-  background-color: #68B738;
+  background-color: #68b738;
   text-transform: uppercase;
   border: none;
+  display: block;
 }
 
 .button--disabled {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   color: #444444;
 }

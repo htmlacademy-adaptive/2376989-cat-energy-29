@@ -1,5 +1,5 @@
 .additions__title {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-size: 24px;
   line-height: 24px;
 }
@@ -17,14 +17,15 @@
 }
 
 .addition-item__title {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 16px;
   color: #222222;
 }
 
-.addition-item__amount, .addition-item__price {
-  font-family: "Oswald";
+.addition-item__amount,
+.addition-item__price {
+  font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 16px;
   color: #444444;
@@ -35,7 +36,7 @@
 }
 
 .additions__present-title {
-  font-family: "Lato";
+  font-family: "Lato", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;

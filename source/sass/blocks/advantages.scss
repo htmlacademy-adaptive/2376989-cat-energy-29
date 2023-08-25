@@ -2,6 +2,20 @@
   font-family: "Oswald", sans-serif;
   font-size: 36px;
   line-height: 40px;
+  margin: 0;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+  }
 }
 
 .advantages-item__description {
@@ -9,26 +23,71 @@
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .advantages-list {
-  outline: 5px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -5px;
+  //outline: 5px solid rgba(255, 0, 0, 0.8);
+  //outline-offset: -5px;
   margin: 0;
   padding: 0;
   list-style-type: none;
 
   @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: 230px 230px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 37px 153px;
+    max-width: 650px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
+    gap: 94px;
+    max-width: max-content;
   }
 }
 
 .advantages-list__item {
-  outline: 5px solid rgba(0, 255, 0, 0.8);
-  outline-offset: -5px;
+  //outline: 5px solid rgba(0, 255, 0, 0.8);
+  //outline-offset: -5px;
+  margin-bottom: 24px;
+
+  &::before {
+    content: '';
+    width: 60px;
+    height: 60px;
+    display: block;
+    float: left;
+    background-image: url(../../img/advantages-leaf.svg);
+    margin-right: 20px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 31px;
+    }
+  }
+
+  &--powder::before {
+    background-image: url(../../img/advantages-powder.svg);
+  }
+
+  &--food::before {
+    background-image: url(../../img/advantages-food.svg);
+  }
+
+  &--clock::before {
+    background-image: url(../../img/advantages-clock.svg);
+  }
+
+  @media (min-width: $tablet-width) {
+    float: none;
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+  }
 }

@@ -1,11 +1,15 @@
 .example-block {
   background-color: #eaeaea;
+  padding: 25px 20px;
 }
 
 .example-block__title {
   font-family: "Oswald", sans-serif;
   font-size: 36px;
   line-height: 40px;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .example-block__description {
@@ -15,10 +19,22 @@
   color: #444444;
 }
 
+.example-block__legend {
+  position: relative;
+  display: flex;
+  gap: 32px;
+  margin-bottom: 30px;
+}
+
 .example-block__legend .legend-block__amount {
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   line-height: 24px;
+  border: 1px solid #cdcdcd;
+  display: block;
+  width: 130px;
+  text-align: center;
+  padding: 14px 0;
 }
 
 .example-block__legend .legend-block__description {
@@ -26,10 +42,27 @@
   font-size: 12px;
   line-height: 12px;
   color: #444444;
+  text-align: center;
+  background-color: #eaeaea;
+}
+
+.weight-description {
+  position: absolute;
+  bottom: -16px;
+  left: 34px;
+}
+
+.time-description {
+  position: absolute;
+  top: 47px;
+  right: 35px;
 }
 
 .example-block__expenses {
   font-family: "Oswald", sans-serif;
   font-size: 14px;
   line-height: 20px;
+  font-weight: 400;
+  margin-left: auto;
+  margin-right: auto;
 }

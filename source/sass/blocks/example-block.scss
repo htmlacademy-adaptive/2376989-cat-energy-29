@@ -1,6 +1,10 @@
 .example-block {
   background-color: #eaeaea;
   padding: 25px 20px;
+
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+  }
 }
 
 .example-block__title {
@@ -10,6 +14,11 @@
   font-weight: 400;
   margin: 0;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .example-block__description {
@@ -44,18 +53,35 @@
   color: #444444;
   text-align: center;
   background-color: #eaeaea;
+
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+    br {
+      display: none;
+    }
+  }
 }
 
 .weight-description {
   position: absolute;
   bottom: -16px;
   left: 34px;
+
+  @media (min-width: $tablet-width) {
+    bottom: -5px;
+    left: 25px;
+  }
 }
 
 .time-description {
   position: absolute;
   top: 47px;
   right: 35px;
+
+  @media (min-width: $tablet-width) {
+    bottom: 45px;
+    left: -230px;
+  }
 }
 
 .example-block__expenses {

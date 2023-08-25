@@ -34,6 +34,11 @@
   max-width: 140px;
 }
 
+.cooperation__map {
+  width: 768px;
+  height: 400px;
+}
+
 .cooperation__address {
   font-family: "Lato", sans-serif;
   font-size: 14px;
@@ -51,4 +56,18 @@
 
 .footer__title {
   text-align: center;
+}
+
+.social__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 26px;
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
 }

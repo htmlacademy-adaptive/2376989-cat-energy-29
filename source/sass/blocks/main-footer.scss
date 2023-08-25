@@ -5,6 +5,7 @@
 .cooperation-wrapper {
   display: flex;
   justify-content: space-between;
+  padding: 26px 20px;
 }
 
 .main-footer__wrapper {
@@ -24,23 +25,49 @@
 }
 
 .cooperation__call {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 20px;
+  font-weight: 400;
   color: #111111;
   text-transform: uppercase;
+  max-width: 140px;
+}
+
+.cooperation__map {
+  width: 768px;
+  height: 400px;
 }
 
 .cooperation__address {
-  font-family: "Lato";
+  font-family: "Lato", sans-serif;
   font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+  max-width: 140px;
+}
+
+.copyright__author {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
   line-height: 20px;
   color: #444444;
 }
 
-.copyright__author {
-  font-family: "Lato";
-  font-size: 16px;
-  line-height: 20px;
-  color: #444444;
+.footer__title {
+  text-align: center;
+}
+
+.social__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 26px;
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
 }

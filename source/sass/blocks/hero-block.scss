@@ -5,6 +5,7 @@
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   width: 320px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -38,6 +39,10 @@
     margin-left: 90px;
     margin-bottom: 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+  }
 }
 
 .hero-block__legend {
@@ -54,6 +59,10 @@
     margin-left: 90px;
     min-width: 283px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 52px;
+  }
 }
 
 .hero-block__image {
@@ -68,6 +77,13 @@
     right: -60px;
     width: 709px;
     height: 609px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -300px;
+    right: -500px;
+    width: 550px;
+    height: 500px;
   }
 }
 
